@@ -27,7 +27,7 @@ namespace courseProject
             sexField.SelectedIndex = 0;
             phoneField.Text = "+79";
 
-            connectionString = @"provider=Microsoft.Jet.OLEDB.4.0; data source = БД.mdb";
+            connectionString = @"provider=Microsoft.Jet.OLEDB.4.0; data source = DataBase\БД.mdb";
             OleDbConnection connection = new OleDbConnection(connectionString);
             connection.Open();
             if (connection.State == ConnectionState.Open)
